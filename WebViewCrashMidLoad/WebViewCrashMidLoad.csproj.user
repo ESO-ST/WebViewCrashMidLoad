@@ -3,13 +3,13 @@
   <PropertyGroup>
     <IsFirstTimeProjectOpen>False</IsFirstTimeProjectOpen>
     <ActiveDebugFramework>net8.0-ios</ActiveDebugFramework>
-    <ActiveDebugProfile>iPad (10th generation) iOS 17.0</ActiveDebugProfile>
+    <ActiveDebugProfile>iPad (10th generation) iOS 17.2</ActiveDebugProfile>
     <SelectedPlatformGroup>Simulator</SelectedPlatformGroup>
-    <DefaultDevice>iPad (10th generation) iOS 17.0</DefaultDevice>
+    <DefaultDevice>iPad (10th generation) iOS 17.2</DefaultDevice>
   </PropertyGroup>
   <PropertyGroup Condition="'$(TargetPlatformIdentifier)'=='iOS'">
-    <RuntimeIdentifier>iossimulator-x64</RuntimeIdentifier>
-    <PlatformTarget>x64</PlatformTarget>
+    <RuntimeIdentifier>iossimulator-arm64</RuntimeIdentifier>
+    <PlatformTarget>arm64</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
     <MauiXaml Update="OtherPage.xaml">

@@ -1,6 +1,9 @@
+using Mopups.Pages;
+using Mopups.Services;
+
 namespace WebViewCrashMidLoad;
 
-public partial class OtherPage : ContentPage
+public partial class OtherPage : PopupPage
 {
 	public OtherPage()
 	{
@@ -9,6 +12,6 @@ public partial class OtherPage : ContentPage
 
     private void OnCounterClicked(System.Object sender, System.EventArgs e)
     {
-        Navigation.PopModalAsync();
+		MopupService.Instance.PopAsync();
     }
 }

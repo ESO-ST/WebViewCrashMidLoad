@@ -1,4 +1,9 @@
-﻿namespace WebViewCrashMidLoad
+﻿using CommunityToolkit.Maui.Views;
+using Mopups.Pages;
+using Mopups.PreBaked.Services;
+using Mopups.Services;
+
+namespace WebViewCrashMidLoad
 {
     public partial class MainPage : ContentPage
     {
@@ -11,8 +16,7 @@
 
         private void OnCounterClicked(object sender, EventArgs e)
         {
-            //Navigation.PushAsync(new OtherPage());
-            Navigation.PushModalAsync(new OtherPage());
+            MopupService.Instance.PushAsync(new OtherPage());
         }
     }
 
