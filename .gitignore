@@ -3,3 +3,5 @@
 ################################################################################
 
 /.vs
+/WebViewCrashMidLoad/bin/Debug/net8.0-ios/iossimulator-arm64
+/WebViewCrashMidLoad/obj
