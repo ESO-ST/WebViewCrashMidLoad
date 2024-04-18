@@ -12,6 +12,13 @@ public partial class OtherPage : PopupPage
 
     private void OnCounterClicked(System.Object sender, System.EventArgs e)
     {
-		MopupService.Instance.PopAsync();
+        MopupService.Instance.PopAsync();
     }
+
+    private async void OnCallActionSheetClicked(System.Object sender, System.EventArgs e)
+    {
+        await DisplayActionSheet("Action Sheet Clicked", "Cancel", "Destruction", "Action1", "Action2");
+    }
+
+
 }
