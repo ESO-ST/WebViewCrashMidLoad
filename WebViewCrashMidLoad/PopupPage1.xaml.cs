@@ -3,16 +3,17 @@ using Mopups.Services;
 
 namespace WebViewCrashMidLoad;
 
-public partial class OtherPage : PopupPage
+public partial class PopupPage1 : PopupPage
 {
-	public OtherPage()
+	public PopupPage1()
 	{
 		InitializeComponent();
 	}
 
-    private void OnCounterClicked(System.Object sender, System.EventArgs e)
+    private async void OnCloseButtonClicked(System.Object sender, System.EventArgs e)
     {
-        MopupService.Instance.PopAsync();
+        await Task.Delay(2000);
+        await MopupService.Instance.PopAsync();
     }
 
     private async void OnCallActionSheetClicked(System.Object sender, System.EventArgs e)

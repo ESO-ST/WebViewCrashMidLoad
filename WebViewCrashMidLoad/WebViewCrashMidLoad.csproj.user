@@ -12,7 +12,7 @@
     <PlatformTarget>arm64</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
-    <MauiXaml Update="OtherPage.xaml">
+    <MauiXaml Update="PopupPage1.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>

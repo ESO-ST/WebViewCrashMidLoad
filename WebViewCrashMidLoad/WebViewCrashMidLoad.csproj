@@ -59,7 +59,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="OtherPage.xaml">
+	  <Compile Update="PopupPage1.xaml.cs">
+	    <DependentUpon>PopupPage1.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="PopupPage1.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
