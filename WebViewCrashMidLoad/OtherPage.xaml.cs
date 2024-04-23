@@ -14,4 +14,10 @@ public partial class OtherPage : PopupPage
     {
 		MopupService.Instance.PopAsync();
     }
+
+    private void OnOpenPopUpPage2Clicked(object sender, EventArgs e)
+    {
+
+        MopupService.Instance.PushAsync(new PopupPage2());
+    }
 }

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mopups:PopupPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:mopups="clr-namespace:Mopups.Pages;assembly=Mopups"
+                  x:Class="WebViewCrashMidLoad.PopupPage2"
+                  CloseWhenBackgroundIsClicked="false">
+
+  <mopups:PopupPage.Content>
+
+    <Frame>
+      <VerticalStackLayout>
+        <ScrollView>
+          <VerticalStackLayout>
+            <!--Title-->
+            <HorizontalStackLayout>
+              <Label Text="Name"
+                     FontAttributes="Bold" />
+              <Label Text="Event Time" />
+            </HorizontalStackLayout>
+            <WebView Source="dummy.pdf"
+                     HeightRequest="650"
+                     HorizontalOptions="FillAndExpand" />
+
+            <!--Comments-->
+            <Label x:Name="CommentsLabel"
+                   FontAttributes="Bold" />
+            <Label Text="Comments" />
+          </VerticalStackLayout>
+        </ScrollView>
+        <!--Close Button-->
+        <Button x:Name="CloseButton"
+                Margin="20,20,20,20"
+                Clicked="OnCloseClicked"
+                VerticalOptions="End"
+                HorizontalOptions="End" />
+      </VerticalStackLayout>
+    </Frame>
+
+  </mopups:PopupPage.Content>
+
+</mopups:PopupPage>

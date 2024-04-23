@@ -16,7 +16,7 @@ namespace WebViewCrashMidLoad
 
         private void OnCounterClicked(object sender, EventArgs e)
         {
-            MopupService.Instance.PushAsync(new OtherPage());
+            MopupService.Instance.PushAsync(new PopupPage2());
         }
     }
 
