@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="WebViewCrashMidLoad.MainPage">
+             x:Class="WebViewCrashMidLoad.ShellPage">
 
   <ScrollView>
     <VerticalStackLayout Padding="30,0"
@@ -11,14 +11,12 @@
              Aspect="AspectFit"
              SemanticProperties.Description="dot net bot in a race car number eight" />
 
-      <Label Text="Non-Shell Page"
-             SemanticProperties.HeadingLevel="Level1" />
-      <Label Text="Go to the shell page, then come back here, and press the button below to GC collect and see the memory."
+      <Label Text="Shell Page"
              SemanticProperties.HeadingLevel="Level1" />
       
-      <Button Text="Go To Shell Page"
+      <Button Text="Go To Non-Shell Page"
               Clicked="Button_Clicked"/>
-      
+
       <Button Text="GC Collect and output memory used"
               Clicked="Button_Clicked_1" />
     </VerticalStackLayout>

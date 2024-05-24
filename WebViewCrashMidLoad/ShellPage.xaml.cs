@@ -1,25 +1,20 @@
-﻿using CommunityToolkit.Maui.Views;
-using Mopups.Pages;
-using Mopups.PreBaked.Services;
-using Mopups.Services;
-
-namespace WebViewCrashMidLoad
+﻿namespace WebViewCrashMidLoad
 {
-    public partial class MainPage : ContentPage
+    public partial class ShellPage : ContentPage
     {
-        public MainPage()
+        public ShellPage()
         {
             InitializeComponent();
         }
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            App.Current.MainPage = new AppShell();
+            App.Current.MainPage = new MainPage();
         }
 
-        ~MainPage()
+        ~ShellPage()
         {
-            Console.WriteLine("MainPage destroyed");
+            Console.WriteLine("ShellPage destroyed");
         }
 
         private void Button_Clicked_1(object sender, EventArgs e)

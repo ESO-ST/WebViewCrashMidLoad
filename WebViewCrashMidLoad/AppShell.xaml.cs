@@ -6,5 +6,10 @@
         {
             InitializeComponent();
         }
+
+        ~AppShell()
+        {
+            Console.WriteLine("AppShell destroyed");
+        }
     }
 }
