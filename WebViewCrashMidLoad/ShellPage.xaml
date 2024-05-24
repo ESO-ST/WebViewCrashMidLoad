@@ -11,9 +11,6 @@
              Aspect="AspectFit"
              SemanticProperties.Description="dot net bot in a race car number eight" />
 
-      <Label Text="Shell Page"
-             SemanticProperties.HeadingLevel="Level1" />
-      
       <Button Text="Go To Non-Shell Page"
               Clicked="Button_Clicked"/>
 

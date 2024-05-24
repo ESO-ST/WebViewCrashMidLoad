@@ -6,16 +6,14 @@
   <ScrollView>
     <VerticalStackLayout Padding="30,0"
                          Spacing="25">
+      <Label Text="Non-Shell Page"
+             Style="{StaticResource Headline}"
+             SemanticProperties.HeadingLevel="Level1" />
       <Image Source="dotnet_bot.png"
              HeightRequest="185"
              Aspect="AspectFit"
              SemanticProperties.Description="dot net bot in a race car number eight" />
 
-      <Label Text="Non-Shell Page"
-             SemanticProperties.HeadingLevel="Level1" />
-      <Label Text="Go to the shell page, then come back here, and press the button below to GC collect and see the memory."
-             SemanticProperties.HeadingLevel="Level1" />
-      
       <Button Text="Go To Shell Page"
               Clicked="Button_Clicked"/>
       
