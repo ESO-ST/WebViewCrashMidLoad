@@ -5,11 +5,121 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:WebViewCrashMidLoad"
     Shell.FlyoutBehavior="Disabled"
-    Title="WebViewCrashMidLoad">
+    Title="WebViewCrashMidLoad"
+    Shell.TabBarBackgroundColor="SkyBlue" 
+    Shell.TabBarTitleColor="Black">
 
-    <ShellContent
-        Title="Shell"
-        ContentTemplate="{DataTemplate local:ShellPage}"
-        Route="ShellPage" />
+  <TabBar>
+    <Tab Title="Page 1">
+      <ShellContent
+        Title="Page 1 Content 1"
+        ContentTemplate="{DataTemplate local:ShellPage}"/>
+      <ShellContent
+        Title="Page 1 Content 2"
+        ContentTemplate="{DataTemplate local:ShellPage}"/>
+      <ShellContent
+        Title="Page 1 Content 3"
+        ContentTemplate="{DataTemplate local:ShellPage}"/>
+    </Tab>
+    <Tab Title="Page 2">
+      <ShellContent Icon="appicon"
+        Title="Page 2 Content 1"
+        ContentTemplate="{DataTemplate local:ShellPage}"/>
+      <ShellContent
+        Title="Page 2 Content 2"
+        ContentTemplate="{DataTemplate local:ShellPage}"/>
+      <ShellContent
+        Title="Page 2 Content 3"
+        ContentTemplate="{DataTemplate local:ShellPage}"/>
+    </Tab>
+    <Tab Title="Page 3">
+      <ShellContent
+        Title="Page 3 Content 1"
+        ContentTemplate="{DataTemplate local:ShellPage}"/>
+      <ShellContent
+        Title="Page 3 Content 2"
+        ContentTemplate="{DataTemplate local:ShellPage}"/>
+      <ShellContent
+        Title="Page 3 Content 3"
+        ContentTemplate="{DataTemplate local:ShellPage}"/>
+    </Tab>
+    <Tab Title="Page 4">
+      <ShellContent
+        Title="Page 4 Content 1"
+        ContentTemplate="{DataTemplate local:ShellPage}"/>
+      <ShellContent
+        Title="Page 4 Content 2"
+        ContentTemplate="{DataTemplate local:ShellPage}"/>
+      <ShellContent
+        Title="Page 4 Content 3"
+        ContentTemplate="{DataTemplate local:ShellPage}"/>
+    </Tab>
+    <Tab Title="Page 5">
+      <ShellContent
+        Title="Page 5 Content 1"
+        ContentTemplate="{DataTemplate local:ShellPage}"/>
+      <ShellContent
+        Title="Page 5 Content 2"
+        ContentTemplate="{DataTemplate local:ShellPage}"/>
+      <ShellContent
+        Title="Page 5 Content 3"
+        ContentTemplate="{DataTemplate local:ShellPage}"/>
+    </Tab>
+    <Tab Title="Page 6">
+      <ShellContent
+        Title="Page 6 Content 1"
+        ContentTemplate="{DataTemplate local:ShellPage}"/>
+      <ShellContent
+        Title="Page 6 Content 2"
+        ContentTemplate="{DataTemplate local:ShellPage}"/>
+      <ShellContent
+        Title="Page 6 Content 3"
+        ContentTemplate="{DataTemplate local:ShellPage}"/>
+    </Tab>
+    <Tab Title="Page 7">
+      <ShellContent
+        Title="Page 7 Content 1"
+        ContentTemplate="{DataTemplate local:ShellPage}"/>
+      <ShellContent
+        Title="Page 7 Content 2"
+        ContentTemplate="{DataTemplate local:ShellPage}"/>
+      <ShellContent
+        Title="Page 7 Content 3"
+        ContentTemplate="{DataTemplate local:ShellPage}"/>
+    </Tab>
+    <Tab Title="Page 8">
+      <ShellContent
+        Title="Page 8 Content 1"
+        ContentTemplate="{DataTemplate local:ShellPage}"/>
+      <ShellContent
+        Title="Page 8 Content 2"
+        ContentTemplate="{DataTemplate local:ShellPage}"/>
+      <ShellContent
+        Title="Page 8 Content 3"
+        ContentTemplate="{DataTemplate local:ShellPage}"/>
+    </Tab>
+    <Tab Title="Page 9">
+      <ShellContent
+        Title="Page 9 Content 1"
+        ContentTemplate="{DataTemplate local:ShellPage}"/>
+      <ShellContent
+        Title="Page 9 Content 2"
+        ContentTemplate="{DataTemplate local:ShellPage}"/>
+      <ShellContent
+        Title="Page 9 Content 3"
+        ContentTemplate="{DataTemplate local:ShellPage}"/>
+    </Tab>
+    <Tab Title="Page 10">
+      <ShellContent
+        Title="Page 10 Content 1"
+        ContentTemplate="{DataTemplate local:ShellPage}"/>
+      <ShellContent
+        Title="Page 10 Content 2"
+        ContentTemplate="{DataTemplate local:ShellPage}"/>
+      <ShellContent
+        Title="Page 10 Content 3"
+        ContentTemplate="{DataTemplate local:ShellPage}"/>
+    </Tab>
+  </TabBar>
 
 </Shell>

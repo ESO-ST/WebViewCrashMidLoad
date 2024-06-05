@@ -20,8 +20,16 @@
         private void Button_Clicked_1(object sender, EventArgs e)
         {
             GC.Collect();
-            Console.WriteLine("GC.Collect()" + $" Memory used: {GC.GetTotalMemory(false)}");
-            int count = Application.Current.Windows.Count;
+            long memoryUsed = GC.GetTotalMemory(false);
+            Console.WriteLine("GC.Collect()" + $" Memory used: {memoryUsed}");
+            memoryUsedBtn.Text = $"Memory used: {memoryUsed}";
+        }
+
+        private void Button_Clicked_2(object sender, EventArgs e)
+        {
+            long memoryUsed = GC.GetTotalMemory(false);
+            Console.WriteLine($"Memory used: {memoryUsed}");
+            memoryUsedBtn.Text = $"Memory used: {memoryUsed}";
         }
     }
 }
